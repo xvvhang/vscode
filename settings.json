@@ -1,0 +1,13 @@
+{
+  "editor.fontFamily": "JetBrainsMonoNL Nerd Font Propo",
+  "editor.fontSize": 13,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  "terminal.integrated.shellIntegration.enabled": false,
+  "workbench.activityBar.location": "bottom",
+  "workbench.colorTheme": "GitHub Light",
+  "workbench.editor.showTabs": "none",
+  "workbench.startupEditor": "none",
+  "vim.flash.enable": true,
+}

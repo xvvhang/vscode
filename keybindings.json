@@ -1,0 +1,128 @@
+[
+  /* Command Paltte */
+  // Command: Show All Commands
+  {
+    "key": "cmd-shift-p",
+    "command": "workbench.action.showCommands",
+  },
+  {
+    "key": "cmd-r",
+    "command": "workbench.action.showAllEditors",
+  },
+  /* Primary Sidebar */
+  // Files: New File
+  {
+    "key": "cmd-a",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !inputFocus"
+  },
+  // Files: New Folder
+  {
+    "key": "cmd-shift-a",
+    "command": "explorer.newFolder",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !inputFocus"
+  },
+  // Files: Open To Right Side
+  {
+    "key": "ctrl-v",
+    "command": "explorer.openToSide",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  // Files: Open To Down Side
+  {
+    "key": "ctrl-s",
+    "command": "runCommands",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus",
+    "args": {
+      "commands": [
+        "workbench.action.splitEditorDown",
+        "explorer.openAndPassFocus",
+        "workbench.action.closeOtherEditors"
+      ]
+    }
+  },
+  // Focus: Source Control
+  {
+    "key": "shift-cmd-g",
+    "command": "workbench.view.scm",
+  },
+  /* Editor */
+  // Editor: Goto Definition
+  {
+    "key": "cmd-k cmd-d",
+    "command": "editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus"
+  },
+  // Editor: Goto References
+  {
+    "key": "cmd-k cmd-r",
+    "command": "editor.action.goToReferences",
+    "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+  },
+  // Editor: Rename Symbol
+  {
+    "key": "cmd-k cmd-n",
+    "command": "editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
+  // Editor: Split Right
+  {
+    "key": "ctrl-w v",
+    "command": "workbench.action.splitEditor",
+    "when": "editorTextFocus"
+  },
+  // Editor: Split Down
+  {
+    "key": "ctrl-w s",
+    "command": "workbench.action.splitEditorDown",
+    "when": "editorTextFocus"
+  },
+  // Editor: Navigate Left
+  {
+    "key": "ctrl-h",
+    "command": "workbench.action.navigateLeft",
+    "when": "editorTextFocus"
+  },
+  // Editor: Navigate Down
+  {
+    "key": "ctrl-j",
+    "command": "workbench.action.navigateDown",
+    "when": "editorTextFocus"
+  },
+  // Editor: Navigate Up
+  {
+    "key": "ctrl-k",
+    "command": "workbench.action.navigateUp",
+    "when": "editorTextFocus"
+  },
+  // Editor: Navigate Right
+  {
+    "key": "ctrl-l",
+    "command": "workbench.action.navigateRight",
+    "when": "editorTextFocus"
+  },
+  // Editor: Decrease View Width
+  {
+    "key": "alt-h",
+    "command": "workbench.action.decreaseViewWidth",
+    "when": "editorTextFocus"
+  },
+  // Editor: Decrease View Height
+  {
+    "key": "alt-j",
+    "command": "workbench.action.decreaseViewHeight",
+    "when": "editorTextFocus"
+  },
+  // Editor: Increase View Height
+  {
+    "key": "alt-k",
+    "command": "workbench.action.increaseViewHeight",
+    "when": "editorTextFocus"
+  },
+  // Editor: Increase View Width
+  {
+    "key": "alt-l",
+    "command": "workbench.action.increaseViewWidth",
+    "when": "editorTextFocus"
+  },
+]
